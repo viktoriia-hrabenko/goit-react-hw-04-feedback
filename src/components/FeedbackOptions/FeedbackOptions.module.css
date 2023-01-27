@@ -1,0 +1,38 @@
+button {
+    font-weight: 600;
+    margin-right: 15px;
+    width: 150px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+
+button:nth-child(1) {
+    background-color: #3A5A40;  
+} 
+button:nth-child(1):hover {
+            color: white;
+            background-color: #588157;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+button:nth-child(2) {
+    background-color: #1d3557f5;
+}
+button:nth-child(2):hover {
+    color: white;
+    background-color: #457B9D;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+button:nth-child(3) {
+    background-color: #E76F51;
+}
+button:nth-child(3):hover {
+    color: white;
+    background-color: #F4A261;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
