@@ -1,11 +1,8 @@
-import { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import css from '../Statistics/Statistics.module.css';
 
-export class Statistics extends Component {
-    render() {
-        const { good, neutral, bad, total, positivePercentage } = this.props;
-
+export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
         return (
             <div className={css.Statistics}>
                 <span className={css.Statistics__item}>Good: {good}</span>
@@ -15,7 +12,6 @@ export class Statistics extends Component {
                 <span className={css.Statistics__item}>Positive feedback: {positivePercentage}%</span>
             </div>
         )
-    }
 }
 
 Statistics.propTypes = {

@@ -1,10 +1,8 @@
-import {Component} from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 import "../FeedbackOptions/FeedbackOptions.module.css";
 
-export class FeedbackOptions extends Component {  
-    render() {
-        const { options, addFeedback } = this.props;
+export const FeedbackOptions = ({ options, addFeedback }) => {  
         return (
             <div>
                 {options.map(option => (
@@ -19,7 +17,6 @@ export class FeedbackOptions extends Component {
                 ))}
             </div>
         );
-    }
 }
 
 FeedbackOptions.propTypes = {
